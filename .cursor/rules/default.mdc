@@ -1,0 +1,15 @@
+---
+description: 
+globs: 
+alwaysApply: true
+---
+- **Project:** Slidev presentation.
+- **Runtime/PM:** Use `bun` exclusively (`bun install`, `bun run ...`).
+- **Main File:** `./slides.md`.
+- **New Slides:** Create in `./pages/`, import via `## src: ./pages/[filename].md`.
+- **Theme:** Use `@slidev/theme-default`. Do not create custom themes.
+- **Styling:** Use UnoCSS, scoped `<style>`, or global styles (`./style.css` / `./styles/index.ts`). See `./docs/how-to-styling.md`.
+- **Assets:** Store in `./public/`.
+- **Commands:** `bun run dev` (start), `bun run build`, `bun run export`.
+- **Docs:** Start with `./docs/how-to-overview.md`.
+- **Git:** Do not perform any Git operations.
