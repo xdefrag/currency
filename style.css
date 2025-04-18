@@ -1,0 +1,151 @@
+/* Global styles for the presentation */
+
+/* Import Terminus TTF font */
+@font-face {
+  font-family: 'Terminus TTF';
+  src: url('/fonts/TerminusTTF-4.49.3.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Terminus TTF';
+  src: url('/fonts/TerminusTTF-Bold-4.49.3.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Terminus TTF';
+  src: url('/fonts/TerminusTTF-Italic-4.49.3.ttf') format('truetype');
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Terminus TTF';
+  src: url('/fonts/TerminusTTF-Bold-Italic-4.49.3.ttf') format('truetype');
+  font-weight: bold;
+  font-style: italic;
+}
+
+.slidev-layout {
+  background-image: url(/images/bg2.png);
+  background-size: auto;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: rgba(0, 0, 0, 0.85);
+  background-blend-mode: overlay;
+  color: #00ff00;
+  font-family: 'Terminus TTF', monospace;
+  font-size: 24px; /* Увеличено с 16px до 24px (18pt) */
+  text-shadow: 0 0 5px #00ff00, 0 0 10px rgba(0, 255, 0, 0.8);
+} 
+
+/* Heading styles */
+h1, h2, h3, h4, h5, h6 {
+  color: #00ff00;
+  font-family: 'Terminus TTF', monospace;
+  text-shadow: 0 0 5px #00ff00, 0 0 15px rgba(0, 255, 0, 0.5);
+}
+
+h1 {
+  font-size: 32px; /* 24pt */
+}
+
+h2 {
+  font-size: 28px; /* 21pt */
+}
+
+h3 {
+  font-size: 24px; /* 18pt */
+}
+
+/* Links */
+a {
+  color: #00ff00;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+a:hover {
+  color: #00ff00;
+  text-shadow: 0 0 8px #00ff00;
+}
+
+/* Code blocks */
+pre, code {
+  font-family: 'Terminus TTF', monospace;
+  font-size: 20px; /* 15pt */
+  background-color: rgba(0, 50, 0, 0.3);
+  border: 1px solid #00aa00;
+}
+
+/* Screen flicker effect */
+.slidev-layout::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(rgba(10, 20, 10, 0.1), rgba(10, 20, 10, 0.1));
+  opacity: 0.5;
+  pointer-events: none;
+  animation: flicker 0.15s infinite alternate;
+}
+
+@keyframes flicker {
+  0% { opacity: 0.4; }
+  100% { opacity: 0.5; }
+}
+
+/* Scan line effect */
+.slidev-layout::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: repeating-linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 0.15),
+    rgba(0, 0, 0, 0.15) 1px,
+    transparent 1px,
+    transparent 2px
+  );
+  pointer-events: none;
+}
+
+.glow {
+  filter: drop-shadow(0 0 5px rgba(0, 255, 0, 0.7));
+}
+
+/* Pulsating green glow effect */
+.pulse-glow {
+  animation: pulse-green 2s infinite;
+  filter: drop-shadow(0 0 5px rgba(0, 255, 0, 0.7));
+}
+
+@keyframes pulse-green {
+  0% {
+    filter: drop-shadow(0 0 5px rgba(0, 255, 0, 0.7));
+  }
+  50% {
+    filter: drop-shadow(0 0 15px rgba(0, 255, 0, 0.9));
+  }
+  100% {
+    filter: drop-shadow(0 0 5px rgba(0, 255, 0, 0.7));
+  }
+}
+
+/* Blinking text animation */
+.blink {
+  animation: blink-effect 1s ease-in-out infinite;
+}
+
+@keyframes blink-effect {
+  0%, 100% { opacity: 0; }
+  50% { opacity: 1; }
+}
