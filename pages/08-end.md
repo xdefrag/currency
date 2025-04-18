@@ -3,11 +3,15 @@
   <img src="/images/qr.png" class="h-30 glow" />
 </div>
 
-**Частные валюты**: свобода через децентрализацию.
+**\> exit state: CONTROL_RESTORED**
 
-**Montelibero**: экономическая свобода.
+**ЧАСТНЫЕ ВАЛЮТЫ** — не концепт. Интерфейс к реальности.
 
-<span class="blink">**Призыв**: исследовать токенизацию.</span>
+**MONTELIBERO** — твой ключ к экономическому контролю.
+
+<span class="blink">**СКАНИРУЙ. ВОЙДИ. РАЗБЕРИСЬ.**</span>
+
+
 
 <style>
 .slidev-layout.end {
