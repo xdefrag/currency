@@ -1,4 +1,4 @@
-# Крипта, частные деньги
+# Крипта, частные валюты
 # и расширение личных свобод
 
 <div class="absolute top-10 left-0 right-0 flex justify-center">
